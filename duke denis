@@ -249,18 +249,6 @@ kohls.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_3.Parent = kohls
 
-local button = Instance.new("TextButton")
-button.Name = "ErinButton"
-button.Size = UDim2.new(0, 419, 0, 36)
-button.Position = UDim2.new(0, 100, 0, 100)
-button.BackgroundColor3 = Color3.fromRGB(255, 95, 95)
-button.TextColor3 = Color3.fromRGB(255, 255, 255)
-button.Font = Enum.Font.SourceSansBold
-button.TextSize = 20
-button.Text = "Erin"
-button.BorderSizePixel = 0
-button.Parent = kohls
-
 local newLabel = Instance.new("TextLabel")
 newLabel.Name = "NewTag"
 newLabel.Size = UDim2.new(0, 40, 0, 20)
@@ -269,9 +257,9 @@ newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 newLabel.Font = Enum.Font.SourceSansBold
 newLabel.TextSize = 14
-newLabel.Text = "NEW"
+newLabel.Text = "NEW" -- E
 newLabel.BorderSizePixel = 0
-newLabel.Parent = button
+newLabel.Parent = kohls
 
 Cleetus.Name = "Cleetus"
 Cleetus.Parent = ScrollingFrame
