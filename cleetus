@@ -1508,7 +1508,7 @@ UICorner_19.Parent = InfGaunt
 
 local newLabel = Instance.new("TextLabel")
 newLabel.Name = "NewTag"
-newLabel.Size = UDim2.new(0, 40, 0, 30)
+newLabel.Size = UDim2.new(0, 50, 0, 25)
 newLabel.Position = UDim2.new(0, 375, 0, 8)
 newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -1532,13 +1532,25 @@ NexPluviaAdmin.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_20.Parent = NexPluviaAdmin
 
+local newLabel = Instance.new("TextLabel")
+newLabel.Name = "NewTag"
+newLabel.Size = UDim2.new(0, 50, 0, 25)
+newLabel.Position = UDim2.new(0, 375, 0, 8)
+newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+newLabel.Font = Enum.Font.SourceSansBold
+newLabel.TextSize = 14
+newLabel.Text = "NEW"
+newLabel.BorderSizePixel = 0
+newLabel.Parent = NexPluviaAdmin
+
 FunnyVest.Name = "FunnyVest"
 FunnyVest.Parent = ScrollingFrame
 FunnyVest.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
 FunnyVest.Position = UDim2.new(0.00934579596, 0, 0.292021126, 0)
 FunnyVest.Size = UDim2.new(0, 419, 0, 36)
 FunnyVest.Font = Enum.Font.SourceSansBold
-FunnyVest.Text = "    Bomb Vest"
+FunnyVest.Text = "    Suicide Vest"
 FunnyVest.TextColor3 = Color3.fromRGB(255, 255, 255)
 FunnyVest.TextSize = 20.000
 FunnyVest.TextWrapped = true
@@ -1668,6 +1680,18 @@ end)
 
 UICorner_21.Parent = FunnyVest
 
+local newLabel = Instance.new("TextLabel")
+newLabel.Name = "NewTag"
+newLabel.Size = UDim2.new(0, 50, 0, 25)
+newLabel.Position = UDim2.new(0, 375, 0, 8)
+newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+newLabel.Font = Enum.Font.SourceSansBold
+newLabel.TextSize = 14
+newLabel.Text = "NEW"
+newLabel.BorderSizePixel = 0
+newLabel.Parent = FunnyVest
+
 Nuke.Name = "Nuke"
 Nuke.Parent = ScrollingFrame
 Nuke.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1717,6 +1741,18 @@ end)
 
 UICorner_22.Parent = Nuke
 
+local newLabel = Instance.new("TextLabel")
+newLabel.Name = "NewTag"
+newLabel.Size = UDim2.new(0, 50, 0, 25)
+newLabel.Position = UDim2.new(0, 375, 0, 8)
+newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+newLabel.Font = Enum.Font.SourceSansBold
+newLabel.TextSize = 14
+newLabel.Text = "NEW"
+newLabel.BorderSizePixel = 0
+newLabel.Parent = Nuke
+
 Stand.Name = "Stand"
 Stand.Parent = ScrollingFrame
 Stand.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1730,6 +1766,18 @@ Stand.TextWrapped = true
 Stand.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_23.Parent = Stand
+
+local newLabel = Instance.new("TextLabel")
+newLabel.Name = "NewTag"
+newLabel.Size = UDim2.new(0, 50, 0, 25)
+newLabel.Position = UDim2.new(0, 375, 0, 8)
+newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+newLabel.Font = Enum.Font.SourceSansBold
+newLabel.TextSize = 14
+newLabel.Text = "NEW"
+newLabel.BorderSizePixel = 0
+newLabel.Parent = Stand
 
 c00lify.Name = "c00lify"
 c00lify.Parent = ScrollingFrame
@@ -1815,6 +1863,18 @@ end)
 
 UICorner_24.Parent = c00lify
 
+local newLabel = Instance.new("TextLabel")
+newLabel.Name = "NewTag"
+newLabel.Size = UDim2.new(0, 50, 0, 25)
+newLabel.Position = UDim2.new(0, 375, 0, 8)
+newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+newLabel.Font = Enum.Font.SourceSansBold
+newLabel.TextSize = 14
+newLabel.Text = "NEW"
+newLabel.BorderSizePixel = 0
+newLabel.Parent = c00lify
+
 clownvan.Name = "clown van"
 clownvan.Parent = ScrollingFrame
 clownvan.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -1831,7 +1891,7 @@ UICorner_25.Parent = clownvan
 
 local newLabel = Instance.new("TextLabel")
 newLabel.Name = "NewTag"
-newLabel.Size = UDim2.new(0, 40, 0, 30)
+newLabel.Size = UDim2.new(0, 50, 0, 25)
 newLabel.Position = UDim2.new(0, 375, 0, 8)
 newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -1857,7 +1917,7 @@ UICorner_26.Parent = Felipe
 
 local newLabel = Instance.new("TextLabel")
 newLabel.Name = "NewTag"
-newLabel.Size = UDim2.new(0, 40, 0, 30)
+newLabel.Size = UDim2.new(0, 50, 0, 25)
 newLabel.Position = UDim2.new(0, 375, 0, 8)
 newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -1906,7 +1966,7 @@ UICorner_27.Parent = AmongUs
 
 local newLabel = Instance.new("TextLabel")
 newLabel.Name = "NewTag"
-newLabel.Size = UDim2.new(0, 40, 0, 30)
+newLabel.Size = UDim2.new(0, 50, 0, 25)
 newLabel.Position = UDim2.new(0, 375, 0, 8)
 newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -1932,7 +1992,7 @@ UICorner_28.Parent = ServerAdmin
 
 local newLabel = Instance.new("TextLabel")
 newLabel.Name = "NewTag"
-newLabel.Size = UDim2.new(0, 40, 0, 30)
+newLabel.Size = UDim2.new(0, 50, 0, 25)
 newLabel.Position = UDim2.new(0, 375, 0, 8)
 newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -1958,7 +2018,7 @@ UICorner_29.Parent = Sniper
 
 local newLabel = Instance.new("TextLabel")
 newLabel.Name = "NewTag"
-newLabel.Size = UDim2.new(0, 40, 0, 30)
+newLabel.Size = UDim2.new(0, 50, 0, 25)
 newLabel.Position = UDim2.new(0, 375, 0, 8)
 newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -1984,7 +2044,7 @@ UICorner_30.Parent = ElioBlasio
 
 local newLabel = Instance.new("TextLabel")
 newLabel.Name = "NewTag"
-newLabel.Size = UDim2.new(0, 40, 0, 30)
+newLabel.Size = UDim2.new(0, 50, 0, 25)
 newLabel.Position = UDim2.new(0, 375, 0, 8)
 newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -2010,7 +2070,7 @@ UICorner_31.Parent = DarthVader
 
 local newLabel = Instance.new("TextLabel")
 newLabel.Name = "NewTag"
-newLabel.Size = UDim2.new(0, 40, 0, 30)
+newLabel.Size = UDim2.new(0, 50, 0, 25)
 newLabel.Position = UDim2.new(0, 375, 0, 8)
 newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -2034,6 +2094,18 @@ BanHammer.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_32.Parent = BanHammer
 
+local newLabel = Instance.new("TextLabel")
+newLabel.Name = "NewTag"
+newLabel.Size = UDim2.new(0, 50, 0, 25)
+newLabel.Position = UDim2.new(0, 375, 0, 8)
+newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+newLabel.Font = Enum.Font.SourceSansBold
+newLabel.TextSize = 14
+newLabel.Text = "NEW"
+newLabel.BorderSizePixel = 0
+newLabel.Parent = BanHammer
+
 Caducus.Name = "Caducus"
 Caducus.Parent = ScrollingFrame
 Caducus.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -2047,6 +2119,18 @@ Caducus.TextWrapped = true
 Caducus.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_33.Parent = Caducus
+
+local newLabel = Instance.new("TextLabel")
+newLabel.Name = "NewTag"
+newLabel.Size = UDim2.new(0, 50, 0, 25)
+newLabel.Position = UDim2.new(0, 375, 0, 8)
+newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+newLabel.Font = Enum.Font.SourceSansBold
+newLabel.TextSize = 14
+newLabel.Text = "NEW"
+newLabel.BorderSizePixel = 0
+newLabel.Parent = Caducus
 
 AK47.Name = "AK47"
 AK47.Parent = ScrollingFrame
@@ -2359,6 +2443,18 @@ end)
 
 UICorner_34.Parent = AK47
 
+local newLabel = Instance.new("TextLabel")
+newLabel.Name = "NewTag"
+newLabel.Size = UDim2.new(0, 50, 0, 25)
+newLabel.Position = UDim2.new(0, 375, 0, 8)
+newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+newLabel.Font = Enum.Font.SourceSansBold
+newLabel.TextSize = 14
+newLabel.Text = "NEW"
+newLabel.BorderSizePixel = 0
+newLabel.Parent = AK47
+
 Car.Name = "Car"
 Car.Parent = ScrollingFrame
 Car.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
@@ -2478,6 +2574,18 @@ Memeus.TextWrapped = true
 Memeus.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_40.Parent = Memeus
+
+local newLabel = Instance.new("TextLabel")
+newLabel.Name = "NewTag"
+newLabel.Size = UDim2.new(0, 50, 0, 25)
+newLabel.Position = UDim2.new(0, 375, 0, 8)
+newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+newLabel.Font = Enum.Font.SourceSansBold
+newLabel.TextSize = 14
+newLabel.Text = "NEW"
+newLabel.BorderSizePixel = 0
+newLabel.Parent = Memeus
 
 Xester.Name = "Xester"
 Xester.Parent = ScrollingFrame
@@ -2632,18 +2740,6 @@ Kara.TextWrapped = true
 Kara.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_51.Parent = Kara
-
-local newLabel = Instance.new("TextLabel")
-newLabel.Name = "NewTag"
-newLabel.Size = UDim2.new(0, 40, 0, 30)
-newLabel.Position = UDim2.new(0, 375, 0, 8)
-newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-newLabel.Font = Enum.Font.SourceSansBold
-newLabel.TextSize = 14
-newLabel.Text = "NEW"
-newLabel.BorderSizePixel = 0
-newLabel.Parent = Kara
 
 BlackHole.Name = "BlackHole"
 BlackHole.Parent = ScrollingFrame
@@ -2806,18 +2902,6 @@ bbc.TextWrapped = true
 bbc.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_54.Parent = bbc
-
-local newLabel = Instance.new("TextLabel")
-newLabel.Name = "NewTag"
-newLabel.Size = UDim2.new(0, 40, 0, 30)
-newLabel.Position = UDim2.new(0, 375, 0, 8)
-newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
-newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-newLabel.Font = Enum.Font.SourceSansBold
-newLabel.TextSize = 14
-newLabel.Text = "NEW"
-newLabel.BorderSizePixel = 0
-newLabel.Parent = bbc
 
 TouchKill.Name = "TouchKill"
 TouchKill.Parent = ScrollingFrame
@@ -2986,6 +3070,18 @@ BaseballBat.TextWrapped = true
 BaseballBat.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_66.Parent = BaseballBat
+
+local newLabel = Instance.new("TextLabel")
+newLabel.Name = "NewTag"
+newLabel.Size = UDim2.new(0, 50, 0, 25)
+newLabel.Position = UDim2.new(0, 375, 0, 8)
+newLabel.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+newLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+newLabel.Font = Enum.Font.SourceSansBold
+newLabel.TextSize = 14
+newLabel.Text = "NEW"
+newLabel.BorderSizePixel = 0
+newLabel.Parent = BaseballBat
 
 Eggdog.Name = "Eggdog"
 Eggdog.Parent = ScrollingFrame
@@ -3203,3 +3299,4 @@ end
 MakeDraggable()
 
 Main:TweenPosition(UDim2.new(0.382, 0, 0.181, 0), "Out", "Quad", 0.5, true)
+print("E")
