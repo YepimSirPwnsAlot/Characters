@@ -195,7 +195,7 @@ Welcome2.TextColor3 = Color3.fromRGB(0, 0, 0)
 Welcome2.TextSize = 23.000
 Welcome2.TextWrapped = true
 
-UICorner_2.CornerRadius = UDim.new(0, 9)
+UICorner_2.CornerRadius = UDim.new(1, 0)
 UICorner_2.Parent = Welcome2
 
 ScrollSizer.Name = "ScrollSizer"
@@ -2326,7 +2326,7 @@ Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
 Credits.TextSize = 23.000
 Credits.TextWrapped = true
 
-UICorner_68.CornerRadius = UDim.new(0, 9)
+UICorner_68.CornerRadius = UDim.new(1, 0)
 UICorner_68.Parent = Credits
 
 Respawn.Name = "Respawn"
@@ -2348,7 +2348,7 @@ Respawn.MouseButton1Down:Connect(function()
 	end
 end)
 
-UICorner_69.CornerRadius = UDim.new(0, 9)
+UICorner_69.CornerRadius = UDim.new(1, 0)
 UICorner_69.Parent = Respawn
 
 Netless.Name = "Netless"
@@ -2362,21 +2362,44 @@ Netless.TextColor3 = Color3.fromRGB(0,128,0)
 Netless.TextScaled = true
 Netless.TextSize = 14.000
 Netless.TextWrapped = true
+Netless.MouseButton1Down:Connect(function()
+---------------------------------------------------------------------
+--R6Script - Place this script into ServerScriptService to convert --
+--           all players to R6.   By ScpttSpiritWalker, 9/24/2024. --
+---------------------------------------------------------------------
+game.Players.PlayerAdded:Connect(function(player) 
+    player.CharacterAdded:Connect(function(char) 
+        if char:WaitForChild("Humanoid").RigType == Enum.HumanoidRigType.R15 then 
+            local desc = game.Players:GetHumanoidDescriptionFromUserId(player.CharacterAppearanceId) 
+            local newAvatar = game.Players:CreateHumanoidModelFromDescription(desc, Enum.HumanoidRigType.R6) 
+            newAvatar:SetPrimaryPartCFrame(char.PrimaryPart.CFrame) 
+            for _,j in pairs(char:GetChildren()) do
+                if j.ClassName == "Tool" or (j:IsA("LuaSourceContainer") and j.Name ~= "Animate") then
+                    j.Parent = newAvatar
+                end
+            end
+            newAvatar.Name = player.Name 
+            player.Character = newAvatar 
+            newAvatar.Parent = workspace 
+        end 
+    end) 
+end)
+end)
 
-UICorner_70.CornerRadius = UDim.new(0, 9)
+UICorner_70.CornerRadius = UDim.new(1, 0)
 UICorner_70.Parent = Netless
 
 AntiFling.Name = "AntiFling"
 AntiFling.Parent = Main
 AntiFling.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AntiFling.Position = UDim2.new(0.0245891828, 0, 0.915730357, 0)
-AntiFling.Size = UDim2.new(0, 275, 0, 35)
+AntiFling.Size = UDim2.new(0, 265, 0, 35)
 AntiFling.Font = Enum.Font.SourceSans
 AntiFling.Text = game.Players.LocalPlayer.Name
 AntiFling.TextColor3 = Color3.fromRGB(0, 0, 0)
 AntiFling.TextSize = 25
 
-UICorner_71.CornerRadius = UDim.new(0, 9)
+UICorner_71.CornerRadius = UDim.new(1, 0)
 UICorner_71.Parent = AntiFling
 
 X.Name = "X"
