@@ -1,3 +1,16 @@
+local LocalPlayer = game.Players.LocalPlayer
+
+LocalPlayer.Chatted:Connect(function(msg)
+	if msg:lower() == "/open utg" then
+		if Main.Visible == true then
+			Main.Visible = false
+		else
+			wait(4.5)
+			Main.Visible = true
+		end
+	end
+end)
+
 local UltimateTrollingGuiV6 = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
@@ -59,7 +72,7 @@ local AmongUs = Instance.new("TextButton")
 local UICorner_27 = Instance.new("UICorner")
 local ServerAdmin = Instance.new("TextButton")
 local UICorner_28 = Instance.new("UICorner")
-local Spider = Instance.new("TextButton")
+local Sniper = Instance.new("TextButton")
 local UICorner_29 = Instance.new("UICorner")
 local ElioBlasio = Instance.new("TextButton")
 local UICorner_30 = Instance.new("UICorner")
@@ -312,7 +325,6 @@ TheDankEngine.TextSize = 20.000
 TheDankEngine.TextWrapped = true
 TheDankEngine.TextXAlignment = Enum.TextXAlignment.Left
 TheDankEngine.MouseButton1Down:Connect(function()
-
 -- ty krystalburger
 --[[
     Thomas The Dank Engine:
@@ -1059,23 +1071,23 @@ newTag.Font = Enum.Font.SourceSansBold
 newTag.TextSize = 18
 newTag.BorderSizePixel = 0
 
-Spider.Name = "Spider"
-Spider.Parent = ScrollingFrame
-Spider.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
-Spider.Position = UDim2.new(0.00934579596, 0, 0.414076805, 0)
-Spider.Size = UDim2.new(0, 419, 0, 36)
-Spider.Font = Enum.Font.SourceSansBold
-Spider.Text = "    Spider"
-Spider.TextColor3 = Color3.fromRGB(255, 255, 255)
-Spider.TextSize = 20.000
-Spider.TextWrapped = true
-Spider.TextXAlignment = Enum.TextXAlignment.Left
+Sniper.Name = "Sniper"
+Sniper.Parent = ScrollingFrame
+Sniper.BackgroundColor3 = Color3.fromRGB(250, 128, 114)
+Sniper.Position = UDim2.new(0.00934579596, 0, 0.414076805, 0)
+Sniper.Size = UDim2.new(0, 419, 0, 36)
+Sniper.Font = Enum.Font.SourceSansBold
+Sniper.Text = "    Sniper"
+Sniper.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sniper.TextSize = 20.000
+Sniper.TextWrapped = true
+Sniper.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner_29.Parent = Spider
+UICorner_29.Parent = Sniper
 
 local newTag = Instance.new("TextLabel")
 newTag.Name = "NewTag"
-newTag.Parent = Spider
+newTag.Parent = Sniper
 newTag.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
 newTag.Size = UDim2.new(0, 55, 0, 25)
@@ -1855,28 +1867,6 @@ Kara.TextColor3 = Color3.fromRGB(255, 255, 255)
 Kara.TextSize = 20.000
 Kara.TextWrapped = true
 Kara.TextXAlignment = Enum.TextXAlignment.Left
-Kara.MouseButton1Down:Connect(function()
-
-wait(0.3)
-
-game.Players.PlayerAdded:Connect(function(player) 
-    player.CharacterAdded:Connect(function(char) 
-        if char:WaitForChild("Humanoid").RigType == Enum.HumanoidRigType.R15 then 
-            local desc = game.Players:GetHumanoidDescriptionFromUserId(player.CharacterAppearanceId) 
-            local newAvatar = game.Players:CreateHumanoidModelFromDescription(desc, Enum.HumanoidRigType.R6) 
-            newAvatar:SetPrimaryPartCFrame(char.PrimaryPart.CFrame) 
-            for _,j in pairs(char:GetChildren()) do
-                if j.ClassName == "Tool" or (j:IsA("LuaSourceContainer") and j.Name ~= "Animate") then
-                    j.Parent = newAvatar
-                end
-            end
-            newAvatar.Name = player.Name 
-            player.Character = newAvatar 
-            newAvatar.Parent = workspace 
-        end 
-    end) 
-end)
-end)
 
 UICorner_51.Parent = Kara
 
@@ -1907,25 +1897,7 @@ Baldi.TextWrapped = true
 Baldi.TextXAlignment = Enum.TextXAlignment.Left
 Baldi.MouseButton1Down:Connect(function()
 
-wait(0.3)
-
-game.Players.PlayerAdded:Connect(function(player) 
-    player.CharacterAdded:Connect(function(char) 
-        if char:WaitForChild("Humanoid").RigType == Enum.HumanoidRigType.R15 then 
-            local desc = game.Players:GetHumanoidDescriptionFromUserId(player.CharacterAppearanceId) 
-            local newAvatar = game.Players:CreateHumanoidModelFromDescription(desc, Enum.HumanoidRigType.R6) 
-            newAvatar:SetPrimaryPartCFrame(char.PrimaryPart.CFrame) 
-            for _,j in pairs(char:GetChildren()) do
-                if j.ClassName == "Tool" or (j:IsA("LuaSourceContainer") and j.Name ~= "Animate") then
-                    j.Parent = newAvatar
-                end
-            end
-            newAvatar.Name = player.Name 
-            player.Character = newAvatar 
-            newAvatar.Parent = workspace 
-        end 
-    end) 
-end)
+wait(0.3)		
 		
 plr = game.Players.LocalPlayer
 repeat wait() until plr.Character
@@ -2214,27 +2186,6 @@ BaseballBat.TextSize = 20.000
 BaseballBat.TextWrapped = true
 BaseballBat.TextXAlignment = Enum.TextXAlignment.Left
 BaseballBat.MouseButton1Down:Connect(function()
-
-wait(0.3)
-
-game.Players.PlayerAdded:Connect(function(player) 
-    player.CharacterAdded:Connect(function(char) 
-        if char:WaitForChild("Humanoid").RigType == Enum.HumanoidRigType.R15 then 
-            local desc = game.Players:GetHumanoidDescriptionFromUserId(player.CharacterAppearanceId) 
-            local newAvatar = game.Players:CreateHumanoidModelFromDescription(desc, Enum.HumanoidRigType.R6) 
-            newAvatar:SetPrimaryPartCFrame(char.PrimaryPart.CFrame) 
-            for _,j in pairs(char:GetChildren()) do
-                if j.ClassName == "Tool" or (j:IsA("LuaSourceContainer") and j.Name ~= "Animate") then
-                    j.Parent = newAvatar
-                end
-            end
-            newAvatar.Name = player.Name 
-            player.Character = newAvatar 
-            newAvatar.Parent = workspace 
-        end 
-    end) 
-end)
-
 --Paid Script By LilTywan--
 mouse = game.Players.LocalPlayer:GetMouse()
 using = false
@@ -2401,22 +2352,13 @@ Respawn.Text = "Respawn"
 Respawn.TextColor3 = Color3.fromRGB(0,128,0)
 Respawn.TextSize = 30
 Respawn.MouseButton1Down:Connect(function()
+	local Players = game:GetService("Players")
 
-task.wait(1)
+	local player = game.Players.LocalPlayer
 
-local Players = game:GetService("Players")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
-local event = ReplicatedStorage:FindFirstChild("ReloadCharacter")
-if not event then
-	event = Instance.new("RemoteEvent")
-	event.Name = "ReloadCharacter"
-	event.Parent = ReplicatedStorage
-end
-
-script.Parent.MouseButton1Click:Connect(function()
-	event:FireServer()
-end)
+	if player and player.Character then
+		player.Character:BreakJoints()
+	end
 end)
 
 UICorner_69.CornerRadius = UDim.new(1, 0)
@@ -2425,7 +2367,7 @@ UICorner_69.Parent = Respawn
 Netless.Name = "Netless"
 Netless.Parent = Main
 Netless.BackgroundColor3 = Color3.fromRGB(119, 221, 119)
-Netless.Position = UDim2.new(0.58, 0, 0.915730357, 0)
+Netless.Position = UDim2.new(0.63, 0, 0.915730357, 0)
 Netless.Size = UDim2.new(0, 50, 0, 36)
 Netless.Font = Enum.Font.SourceSansBold
 Netless.Text = "R6"
@@ -2444,7 +2386,7 @@ AntiFling.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AntiFling.Position = UDim2.new(0.0245891828, 0, 0.915730357, 0)
 AntiFling.Size = UDim2.new(0, 305, 0, 35)
 AntiFling.Font = Enum.Font.SourceSans
-AntiFling.Text = "Player"
+AntiFling.Text = game.Players.LocalPlayer.Name
 AntiFling.TextColor3 = Color3.fromRGB(0, 0, 0)
 AntiFling.TextSize = 25
 
@@ -2524,7 +2466,7 @@ task.spawn(function()
 			local lerped = currentColor:Lerp(nextColor, step)
 			OpenUtg.TextStrokeColor3 = lerped
 			subtext.TextStrokeColor3 = lerped
-			RunService.RenderStepped:Wait()
+			wait(0.03)
 		end
 
 		currentIndex = nextIndex
@@ -2532,7 +2474,7 @@ task.spawn(function()
 	end
 end)
 
-AntiFling.Text = player.Name
+AntiFling.Text = game.Players.LocalPlayer.Name
 
 AntiFling.FocusLost:Connect(function()
 	if AntiFling.Text == "Disable" then
@@ -2540,64 +2482,30 @@ AntiFling.FocusLost:Connect(function()
 		return
 	end
 
-	for _, p in ipairs(Players:GetPlayers()) do
-		if string.find(p.Name:lower(), AntiFling.Text:lower()) then
-			AntiFling.Text = p.Name
+	for _, player in pairs(game.Players:GetPlayers()) do
+		if string.find(player.Name:lower(), AntiFling.Text:lower()) then
+			AntiFling.Text = player.Name
 			break
 		end
 	end
 end)
 
-local allowedPlayers = {
-	"xRajin_Reap3r",
-	"Guest4554_YT",
-	"Fartman42121cool",
-	"9AMHD",
-	"allogent",
-	"Offsaleboy2021",
-	"TBuns_alt",
-	"Offsaleboy2021",
-	"Thekingofsus7",
-	"Pokemontrainercb",
-	"Iliketurtles2065",
-	"Devthesloth123",
-	"leaveyourscarsbehind",
-	"Lepersonaf",
-	"8bitvee",
-	"bugattiDude737",
-	"mrflimflam",
-	"Temprist",
-	"DenisDaily",
-	"rblx_KrystalTeam"
-}
-
-local function checkIfAllowed()
-	local isAllowed = table.find(allowedPlayers, player.Name) ~= nil
-	UltimateTrollingGuiV6.Enabled = isAllowed
-end
-
-checkIfAllowed()
-
-player.CharacterAdded:Connect(function()
-	checkIfAllowed()
-end)
-
 local function MakeDraggable()
+	local UIS = game:GetService('UserInputService')
 	local frame = Main
 	local dragToggle = false
+	local dragSpeed = 0.25
 	local dragStart = nil
 	local startPos = nil
-	local dragSpeed = 0.25
 
 	local function updateInput(input)
 		local delta = input.Position - dragStart
-		local newPos = UDim2.new(
+		local position = UDim2.new(
 			startPos.X.Scale, startPos.X.Offset + delta.X,
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y
 		)
-		TweenService:Create(frame, TweenInfo.new(dragSpeed), {Position = newPos}):Play()
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 	end
-
 	frame.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragToggle = true
@@ -2612,8 +2520,8 @@ local function MakeDraggable()
 		end
 	end)
 
-	UserInputService.InputChanged:Connect(function(input)
-		if dragToggle and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+	UIS.InputChanged:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) and dragToggle then
 			updateInput(input)
 		end
 	end)
