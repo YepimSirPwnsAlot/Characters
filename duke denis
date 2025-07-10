@@ -1,15 +1,27 @@
-local LocalPlayer = game.Players.LocalPlayer
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
 
-LocalPlayer.Chatted:Connect(function(msg)
-	if msg:lower() == "/open utg" then
-		if Main.Visible == true then
-			Main.Visible = false
-		else
-			wait(4.5)
-			Main.Visible = true
+local UTGList = {
+	"xRajin_Reap3r",
+	"Guest4554_YT",
+	"9AMHD",
+	"Fartman42121cool",
+	"Offsaleboy2021"
+}
+
+local function isWhitelisted(name)
+	for _, allowedName in ipairs(UTGList) do
+		if name == allowedName then
+			return true
 		end
 	end
-end)
+	return false
+end
+
+local Main
+
+if isWhitelisted(LocalPlayer.Name) then
+	print("Access granted. Loading UTG...")
 
 local UltimateTrollingGuiV6 = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
@@ -2473,6 +2485,20 @@ task.spawn(function()
 		nextIndex = (nextIndex % #colors) + 1
 	end
 end)
+
+	LocalPlayer.Chatted:Connect(function(msg)
+		if msg:lower() == "/open utg" then
+			if Main and Main.Visible then
+				Main.Visible = false
+			elseif Main then
+				wait(4.5)
+				Main.Visible = true
+			end
+		end
+	end)
+else
+	warn("Access denied. You are not whitelisted for UTG.")
+end
 
 AntiFling.Text = game.Players.LocalPlayer.Name
 
