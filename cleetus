@@ -1,3 +1,14 @@
+LocalPlayer.Chatted:Connect(function(msg)
+	if msg:lower() == "/open utg" then
+		if Main.Visible == true then
+			Main.Visible = false
+		else
+			wait(4.5)
+			Main.Visible = true
+		end
+	end
+end)
+
 local UltimateTrollingGuiV6 = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UIGradient = Instance.new("UIGradient")
@@ -2362,29 +2373,7 @@ Netless.TextColor3 = Color3.fromRGB(0,128,0)
 Netless.TextScaled = true
 Netless.TextSize = 14.000
 Netless.TextWrapped = true
-Netless.MouseButton1Down:Connect(function()
----------------------------------------------------------------------
---R6Script - Place this script into ServerScriptService to convert --
---           all players to R6.   By ScpttSpiritWalker, 9/24/2024. --
----------------------------------------------------------------------
-game.Players.PlayerAdded:Connect(function(player) 
-    player.CharacterAdded:Connect(function(char) 
-        if char:WaitForChild("Humanoid").RigType == Enum.HumanoidRigType.R15 then 
-            local desc = game.Players:GetHumanoidDescriptionFromUserId(player.CharacterAppearanceId) 
-            local newAvatar = game.Players:CreateHumanoidModelFromDescription(desc, Enum.HumanoidRigType.R6) 
-            newAvatar:SetPrimaryPartCFrame(char.PrimaryPart.CFrame) 
-            for _,j in pairs(char:GetChildren()) do
-                if j.ClassName == "Tool" or (j:IsA("LuaSourceContainer") and j.Name ~= "Animate") then
-                    j.Parent = newAvatar
-                end
-            end
-            newAvatar.Name = player.Name 
-            player.Character = newAvatar 
-            newAvatar.Parent = workspace 
-        end 
-    end) 
-end)
-end)
+Netless.Visible = false
 
 UICorner_70.CornerRadius = UDim.new(1, 0)
 UICorner_70.Parent = Netless
@@ -2393,7 +2382,7 @@ AntiFling.Name = "AntiFling"
 AntiFling.Parent = Main
 AntiFling.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 AntiFling.Position = UDim2.new(0.0245891828, 0, 0.915730357, 0)
-AntiFling.Size = UDim2.new(0, 265, 0, 35)
+AntiFling.Size = UDim2.new(0, 305, 0, 35)
 AntiFling.Font = Enum.Font.SourceSans
 AntiFling.Text = game.Players.LocalPlayer.Name
 AntiFling.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -2535,5 +2524,7 @@ local function MakeDraggable()
 		end
 	end)
 end
+
 MakeDraggable()
+
 Main:TweenPosition(UDim2.new(0.382, 0, 0.181, 0), "Out", "Quad", 0.5, true)
