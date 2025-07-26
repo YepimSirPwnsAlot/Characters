@@ -1019,6 +1019,9 @@ Illuminati.TextColor3 = Color3.fromRGB(255, 255, 255)
 Illuminati.TextSize = 20.000
 Illuminati.TextWrapped = true
 Illuminati.TextXAlignment = Enum.TextXAlignment.Left
+Illuminati.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-sdfvgbvdefrgbfd-46100"))()
+end)
 
 UICorner_8.Parent = Illuminati
 
@@ -2726,6 +2729,18 @@ DistractDance.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_42.Parent = DistractDance
 
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = DistractDance
+newTag.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "Misc"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 20
+newTag.BorderSizePixel = 0
+
 Misc.Name = "Misc"
 Misc.Parent = ScrollingFrame
 Misc.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
@@ -2739,6 +2754,18 @@ Misc.TextWrapped = true
 Misc.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_43.Parent = Misc
+
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = Misc
+newTag.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "Misc"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 20
+newTag.BorderSizePixel = 0
 
 Zeroith.Name = "Zeroith"
 Zeroith.Parent = ScrollingFrame
@@ -2780,6 +2807,18 @@ OrangeJustice.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_45.Parent = OrangeJustice
 
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = OrangeJustice
+newTag.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "Misc"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 20
+newTag.BorderSizePixel = 0
+
 InsanityPowers.Name = "InsanityPowers"
 InsanityPowers.Parent = ScrollingFrame
 InsanityPowers.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
@@ -2794,6 +2833,18 @@ InsanityPowers.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_46.Parent = InsanityPowers
 
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = InsanityPowers
+newTag.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "Misc"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 20
+newTag.BorderSizePixel = 0
+
 Floss.Name = "Floss"
 Floss.Parent = ScrollingFrame
 Floss.BackgroundColor3 = Color3.fromRGB(162, 162, 162)
@@ -2807,6 +2858,18 @@ Floss.TextWrapped = true
 Floss.TextXAlignment = Enum.TextXAlignment.Left
 
 UICorner_47.Parent = Floss
+
+local newTag = Instance.new("TextLabel")
+newTag.Name = "NewTag"
+newTag.Parent = Floss
+newTag.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+newTag.Position = UDim2.new(0.85, -10, 0.1, 0)
+newTag.Size = UDim2.new(0, 55, 0, 29)
+newTag.Text = "Misc"
+newTag.TextColor3 = Color3.fromRGB(255, 255, 255)
+newTag.Font = Enum.Font.SourceSansBold
+newTag.TextSize = 20
+newTag.BorderSizePixel = 0
 
 Rokudayne.Name = "Rokudayne"
 Rokudayne.Parent = ScrollingFrame
